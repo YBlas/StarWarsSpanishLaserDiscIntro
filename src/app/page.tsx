@@ -5,7 +5,7 @@ import "./page.css";
 import { api } from "@/api/api";
 import { Film } from "./types/Film";
 import FilmPoster from "./components/FilmPoster/FilmPoster";
-import { FilmIntro } from "./components/FilmIntro/page";
+import { FilmIntro } from "./components/FilmIntro";
 
 const Home = () => {
   const [films, setFilms] = useState<Film[]>([]);
