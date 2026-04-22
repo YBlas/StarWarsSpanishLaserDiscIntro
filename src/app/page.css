@@ -1,0 +1,12 @@
+
+
+.HomeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 50px;
+    gap: 20px;
+}

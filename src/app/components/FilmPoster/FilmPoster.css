@@ -1,0 +1,22 @@
+
+
+.FilmPosterContainer {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.FilmPosterContainer:hover {
+    box-shadow: 0 0px 32px rgba(255, 255, 255, 1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.FilmPosterContainer img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px 2px #0000001a;
+}

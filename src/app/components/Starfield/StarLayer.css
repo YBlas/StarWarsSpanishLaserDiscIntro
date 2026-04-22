@@ -1,0 +1,7 @@
+.star-layer {
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  filter: blur(1px);
+}

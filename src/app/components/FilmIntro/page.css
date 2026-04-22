@@ -1,0 +1,101 @@
+.IntroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.BlueText {
+    font-family: var(--font-news-gothic), sans-serif;
+    font-weight: 700;
+    color: #2594F4;
+    font-size: 4rem;
+}
+
+.Dissappear {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.Logo {
+    width: 130vw;
+    animation: logoExit 10s forwards;
+}
+
+@keyframes logoExit {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+}
+
+.CrawlWrapper {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    perspective: 500px;
+    perspective-origin: 50% 100%;
+}
+
+
+.Crawl {
+    font-family: var(--font-news-gothic), sans-serif;
+    font-weight: 700;
+    color: #FBF43B;
+    font-size: 4rem;
+
+    width: 1300vw;
+
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    top: 200%;
+
+    transform-origin: bottom center;
+
+    white-space: pre-line;
+
+    z-index: 999;
+
+    animation: crawl 91s linear forwards;
+}
+
+@keyframes crawl {
+    0% {
+        transform: translateX(-50%) rotateX(20deg) translateY(450%) scale(6);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-50%) rotateX(20deg) translateY(-1100%) scale(6);
+        opacity: 0;
+    }
+}
